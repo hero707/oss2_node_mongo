@@ -4,7 +4,7 @@ const app = express();
 const MongoClient = require('mongodb').MongoClient
 
 var db;
-MongoClient.connect("mongodb+srv://labos:hallym@cluster0.vvtp274.mongodb.net/?retryWrites=true&w=majority", function(err, client){
+MongoClient.connect("xxxxxxxxxx", function(err, client){
   if (err) return console.log(err)
   db = client.db('nodejs');
   db.collection('login').insertOne({email: 'banana@hallym.ac.kr', password: "banana"}, function(err, result){
